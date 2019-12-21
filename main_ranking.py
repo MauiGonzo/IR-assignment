@@ -7,7 +7,7 @@
     rank_NN:    rank accoriding to the MatchZoo library with the NN sorting algorithm
 """
 import argparse
-import ranking
+import ranking_utils
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     for rnk in args.ranker:
         if rnk == 'build':
             print('Building mini-corpi:')
-            ranking.init_minicorpi(base_path, 10)
+            ranking_utils.init_minicorpi(base_path, 1000)
 
             #do_stuff
         elif rnk == 'rank_BM25':

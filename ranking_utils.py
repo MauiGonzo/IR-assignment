@@ -15,7 +15,7 @@ def convert(list):
 
 
 def init_minicorpi(path, n=100):
-    QUIK = True  # DEBUG OPTION
+    QUIK = False  # DEBUG OPTION
     # 1) read input
     corpus_col = pd.read_csv(path + '/output.csv', skiprows=0)
     if QUIK:
