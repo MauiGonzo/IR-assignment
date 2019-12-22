@@ -16,9 +16,10 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     base_path = '/Users/mauriceverbrugge/Google Drive/COMPUTING SCIENCE/IR/IR_assignment/robust04/'
+    # base_path = '/home/maurice/Documents/MASTER/IR_assignment'
     for rnk in args.ranker:
         if rnk == 'build':
-            print('Building mini-corpi:')
+            print('Building mini-corpi...')
             ranking_utils.init_minicorpi(base_path, 1000)
 
             #do_stuff
